@@ -34,7 +34,7 @@ namespace WindowsFormsApp5
         private void button1_Click(object sender, EventArgs e)
         {
             folderBrowserDialog1.ShowDialog();
-            int sayi=0;
+            int sayi= treeView1.Nodes.Count;
             foreach (string item in Directory.GetDirectories(folderBrowserDialog1.SelectedPath))
             {
                 treeView1.Nodes.Add(item);
@@ -49,8 +49,6 @@ namespace WindowsFormsApp5
             {
                 treeView1.Nodes.Add(new TreeNode(dosya));
             }
-
-
         }
     }
 }

@@ -29,6 +29,7 @@ namespace WindowsFormsApp5
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Urunler");
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.btnEkle = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -41,6 +42,10 @@ namespace WindowsFormsApp5
             this.treeView1.Location = new System.Drawing.Point(62, 36);
             this.treeView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.treeView1.Name = "treeView1";
+            treeNode1.Name = "Node0";
+            treeNode1.Text = "Urunler";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode1});
             this.treeView1.Size = new System.Drawing.Size(204, 254);
             this.treeView1.TabIndex = 0;
             // 
